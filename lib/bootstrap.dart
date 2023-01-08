@@ -12,6 +12,12 @@ class AppBlocObserver extends BlocObserver {
   }
 
   @override
+  void onClose(BlocBase bloc) {
+    log('onClose(${bloc.runtimeType})');
+    super.onClose(bloc);
+  }
+
+  @override
   void onError(BlocBase<dynamic> bloc, Object error, StackTrace stackTrace) {
     log('onError(${bloc.runtimeType}, $error, $stackTrace)');
     super.onError(bloc, error, stackTrace);

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#ED9728</color>
+    <color name="grey">#525252</color>
+    <color name="lightGrey">#9E9E9E</color>
+    <color name="darkGrey">#525252</color>
+    <color name="primaryOpacity70">#B3ED9728</color>
+    <color name="darkPrimary">#d17d11</color>
+    <color name="grey1">#707070</color>
+    <color name="white">#FFFFFF</color>
+    <color name="error">#e61f34</color>
+    <color name="black">#000000</color>
+</resources>

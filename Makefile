@@ -1,7 +1,9 @@
-.PHONY: setup
-setup:
+# Setup project
+.PHONY: build-runner
+build-runner:
 	flutter packages pub run build_runner build --delete-conflicting-outputs
 
+# Run app
 .PHONY: run-dev
 run-dev:
 	flutter run --flavor development --target lib/main_development.dart
