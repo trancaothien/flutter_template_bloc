@@ -14,7 +14,19 @@ run-stg:
 run-prd:
 	flutter run --flavor production --target lib/main_production.dart
 
-# only Android
-.PHONY: build-dev
-build-dev: 
+# Only Android
+.PHONY: android-build-dev
+android-build-dev: 
 	flutter build apk --flavor development --target lib/main_development.dart
+
+.PHONY: android-build-stg
+android-build-stg: 
+	flutter build apk --flavor staging --target lib/main_staging.dart
+
+.PHONY: android-build-prod
+android-build-prod: 
+	flutter build apk --flavor production --target lib/main_production.dart
+
+.PHONY: build-bundle
+build-bundle: 
+	flutter build appbundle --flavor production --target lib/main_production.dart
