@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_template_flavor/counter/counter.dart';
 import 'package:flutter_template_flavor/l10n/l10n.dart';
+import 'package:flutter_template_flavor/presentation/resource/theme/bloc/theme_bloc.dart';
+
+import 'di/di.dart';
 
 class App extends StatelessWidget {
   const App({super.key});
@@ -9,7 +12,10 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MultiBlocProvider(
-      providers: const [],
+      providers: [
+        BlocProvider<ThemeBloc>(create: (_) => getIt<ThemeBloc>()),
+        BlocProvider<CounterCubit>(create: (_) => getIt<CounterCubit>()),
+      ],
       child: _materialApp(),
     );
   }
@@ -24,7 +30,7 @@ class App extends StatelessWidget {
       ),
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
-      home: const CounterPage(),
+      home: const CounterView(),
     );
   }
 }
