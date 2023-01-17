@@ -190,6 +190,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.5"
+  curl_logger_dio_interceptor:
+    dependency: "direct main"
+    description:
+      name: curl_logger_dio_interceptor
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.0.3"
   dart_style:
     dependency: transitive
     description:
@@ -434,6 +441,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.0.1"
+  logger:
+    dependency: "direct main"
+    description:
+      name: logger
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.1.0"
   logging:
     dependency: transitive
     description:

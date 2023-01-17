@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_template_flavor/counter/counter.dart';
-import 'package:flutter_template_flavor/l10n/l10n.dart';
 import 'package:flutter_template_flavor/presentation/resource/theme/bloc/theme_bloc.dart';
 
 import 'di/di.dart';
+import 'extensions/context_extension.dart';
 
 class App extends StatelessWidget {
   const App({super.key});
