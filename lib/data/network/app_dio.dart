@@ -3,7 +3,7 @@ import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
 import 'package:injectable/injectable.dart';
 
-@lazySingleton
+@Singleton()
 class AppDio with DioMixin implements Dio {
   AppDio() {
     options = BaseOptions(
@@ -14,7 +14,6 @@ class AppDio with DioMixin implements Dio {
       receiveTimeout: 30000,
     );
 
-    options = options;
     interceptors.add(
       InterceptorsWrapper(onRequest: (options, handler) async {
         handler.next(options);

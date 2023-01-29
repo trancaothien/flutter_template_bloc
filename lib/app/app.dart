@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_template_flavor/counter/counter.dart';
-import 'package:flutter_template_flavor/presentation/resource/theme/bloc/theme_bloc.dart';
+import 'package:flutter_template_flavor/presentation/login/view/login_view.dart';
+import 'package:flutter_template_flavor/presentation/resources/app_themes.dart';
 
+import '../presentation/login/bloc/login_bloc.dart';
 import 'di/di.dart';
 import 'extensions/context_extension.dart';
 
@@ -13,8 +15,8 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiBlocProvider(
       providers: [
-        BlocProvider<ThemeBloc>(create: (_) => getIt<ThemeBloc>()),
         BlocProvider<CounterCubit>(create: (_) => getIt<CounterCubit>()),
+        BlocProvider<LoginBloc>(create: (_) => getIt<LoginBloc>()),
       ],
       child: _materialApp(),
     );
@@ -22,15 +24,12 @@ class App extends StatelessWidget {
 
   Widget _materialApp() {
     return MaterialApp(
-      theme: ThemeData(
-        appBarTheme: const AppBarTheme(color: Color(0xFF13B9FF)),
-        colorScheme: ColorScheme.fromSwatch(
-          accentColor: const Color(0xFF13B9FF),
-        ),
-      ),
+      theme: AppTheme.themeLight(),
+      darkTheme: AppTheme.themeDark(),
+      themeMode: ThemeMode.light,
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
-      home: const CounterView(),
+      home: const LoginView(),
     );
   }
 }

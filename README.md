@@ -1,6 +1,6 @@
 # flutter_template_flavor
 
-A project template: Clean architeture with BLoC
+A project template: Clean architecture with BLoC
 
 ## Getting Started
 

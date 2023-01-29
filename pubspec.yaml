@@ -18,7 +18,7 @@ dependencies:
 
   # Router
   go_router: ^6.0.1
-  # State managemant
+  # State management
   flutter_bloc: ^8.1.1
   bloc_concurrency: ^0.2.0
   # Network
@@ -55,10 +55,10 @@ flutter_gen:
 
   # Optional
   integrations:
-    # flutter_svg: true
-    # flare_flutter: true
-    # rive: true
-    # lottie: true
+  # flutter_svg: true
+  # flare_flutter: true
+  # rive: true
+  # lottie: true
 
   colors:
     inputs:

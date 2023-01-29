@@ -1,4 +1,4 @@
-class AppMargin {
+class AppMargins {
   static const double m8 = 8.0;
   static const double m12 = 12.0;
   static const double m14 = 14.0;
@@ -7,7 +7,7 @@ class AppMargin {
   static const double m20 = 20.0;
 }
 
-class AppPadding {
+class AppPaddings {
   static const double p2 = 2.0;
   static const double p8 = 8.0;
   static const double p12 = 12.0;
@@ -22,7 +22,7 @@ class AppPadding {
   static const double p100 = 100.0;
 }
 
-class AppSize {
+class AppSizes {
   static const double s0 = 0;
   static const double s1 = 1;
   static const double s1_5 = 1.5;
@@ -47,6 +47,6 @@ class AppSize {
   static const double s190 = 190.0;
 }
 
-class DurationConstant {
+class DurationConstants {
   static const int d300 = 300;
 }
