@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_template_flavor/counter/counter.dart';
-import 'package:flutter_template_flavor/presentation/login/view/login_view.dart';
 import 'package:flutter_template_flavor/presentation/resources/app_themes.dart';
 
 import '../presentation/login/bloc/login_bloc.dart';
+import '../presentation/splash/view/splash_view.dart';
 import 'di/di.dart';
 import 'extensions/context_extension.dart';
 
@@ -29,7 +29,7 @@ class App extends StatelessWidget {
       themeMode: ThemeMode.light,
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
-      home: const LoginView(),
+      home: const SplashView(),
     );
   }
 }

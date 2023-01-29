@@ -70,7 +70,6 @@ flutter:
 
   assets:
     - assets/images/
-
   fonts:
     - family: Sarabun
       fonts:

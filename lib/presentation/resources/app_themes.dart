@@ -44,7 +44,7 @@ abstract class AppTheme {
       ),
       textTheme: TextTheme(
         displayLarge: getSemiBoldStyle(
-          color: ColorName.darkGrey,
+          color: ColorName.white,
           fontSize: FontSizes.s16,
         ),
         displayMedium: getRegularStyle(
@@ -52,19 +52,19 @@ abstract class AppTheme {
           fontSize: FontSizes.s16,
         ),
         displaySmall: getBoldStyle(
-          color: ColorName.primary,
+          color: ColorName.white,
           fontSize: FontSizes.s16,
         ),
         headlineMedium: getRegularStyle(
-          color: ColorName.primary,
+          color: ColorName.white,
           fontSize: FontSizes.s14,
         ),
         titleMedium: getMediumStyle(
-          color: ColorName.lightGrey,
+          color: ColorName.white,
           fontSize: FontSizes.s14,
         ),
         titleSmall: getMediumStyle(
-          color: ColorName.primary,
+          color: ColorName.white,
           fontSize: FontSizes.s14,
         ),
         bodyMedium: getMediumStyle(color: ColorName.lightGrey),
@@ -95,7 +95,6 @@ abstract class AppTheme {
           borderRadius: BorderRadius.all(Radius.circular(AppSizes.s8)),
         ),
       ),
-      colorScheme: ColorScheme.fromSwatch().copyWith(secondary: ColorName.grey),
     );
   }
 
@@ -137,7 +136,7 @@ abstract class AppTheme {
       ),
       textTheme: TextTheme(
         displayLarge: getSemiBoldStyle(
-          color: ColorName.darkGrey,
+          color: ColorName.white,
           fontSize: FontSizes.s16,
         ),
         displayMedium: getRegularStyle(
@@ -145,19 +144,19 @@ abstract class AppTheme {
           fontSize: FontSizes.s16,
         ),
         displaySmall: getBoldStyle(
-          color: ColorName.darkPrimary,
+          color: ColorName.white,
           fontSize: FontSizes.s16,
         ),
         headlineMedium: getRegularStyle(
-          color: ColorName.darkPrimary,
+          color: ColorName.white,
           fontSize: FontSizes.s14,
         ),
         titleMedium: getMediumStyle(
-          color: ColorName.lightGrey,
+          color: ColorName.white,
           fontSize: FontSizes.s14,
         ),
         titleSmall: getMediumStyle(
-          color: ColorName.darkPrimary,
+          color: ColorName.white,
           fontSize: FontSizes.s14,
         ),
         bodyMedium: getMediumStyle(color: ColorName.lightGrey),
@@ -188,7 +187,6 @@ abstract class AppTheme {
           borderRadius: BorderRadius.all(Radius.circular(AppSizes.s8)),
         ),
       ),
-      colorScheme: ColorScheme.fromSwatch().copyWith(secondary: ColorName.grey),
     );
   }
 }
